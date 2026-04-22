@@ -1,0 +1,68 @@
+/* ============================================================
+   CONFIGURACIÓN MAESTRA (Bordes reforzados y Medidas)
+   ============================================================ */
+.caja-decorada, .portada-header, .boton-nav {
+    /* Mantenemos tus medidas obligatorias */
+    margin: 20px 30px 40px 50px;
+    padding: 10px 15px 20px 25px;
+
+    /* Actualizado: Tus nuevos grosores de borde */
+    border-top: 4px solid red;
+    border-right: 6px dotted blue;
+    border-bottom: 8px double green;
+    border-left: 3px dashed black;
+
+    /* Tus radios de esquina */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 40px;
+}
+
+/* ============================================================
+   NAVEGACIÓN Y TÍTULOS
+   ============================================================ */
+.portada-nav { display: flex; justify-content: center; gap: 10px; }
+.boton-nav { text-decoration: none; background-color: #333; color: white; display: inline-block; }
+
+.titulo-ejercicio {
+    margin-left: 50px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    text-decoration: underline;
+}
+
+/* ============================================================
+   FONDOS (Tus nuevos colores elegidos)
+   ============================================================ */
+.fondo-verde { background-color: #0cacac; } /* Turquesa fuerte */
+.fondo-naranja { background-color: #a18c69; } /* Tono tierra/café */
+.morada { background-color: #cad61c !important; color: #4a148c; font-weight: bold; } /* Lima vibrante */
+.rojo { color: red; font-weight: bold; }
+
+/* ============================================================
+   EJERCICIO 1: ESCALERA (Las 3 tarjetas)
+   ============================================================ */
+.contenedor-escalera { display: flex; flex-direction: column; }
+.tarjeta { width: 250px; } 
+
+.t-izq { align-self: flex-start; background-color: #60afd3; } /* Azul cielo */
+.t-cen { align-self: center; background-color: #98d84e; }    /* Verde manzana */
+.t-der { align-self: flex-end; background-color: #c09248; }  /* Ocre/Bronce */
+
+/* ============================================================
+   EJERCICIO 2: CAJA DE CONTENIDO (Fondo adaptado)
+   ============================================================ */
+#ejercicio2 .caja-decorada {
+    background-color: #ca9521; /* Gris azulado para que resalte el texto político */
+}
+
+/* ============================================================
+   EJERCICIO 3: ESTRUCTURA FLEX
+   ============================================================ */
+.layout-ej3 { display: flex; flex-direction: column; }
+.flex-ej3 { display: flex; gap: 10px; }
+.mitad { width: 45%; }
+
+/* Suavizado para navegación */
+html { scroll-behavior: smooth; }
